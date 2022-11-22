@@ -1,0 +1,38 @@
+/*
+    Copyright 2021 Camptocamp SA (https://www.camptocamp.com).
+    @author Iván Todorovich <ivan.todorovich@camptocamp.com>
+    License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+*/
+
+.o_field_widget {
+    &.oe_form_field_html_ckeditor {
+        .ck-editor__editable {
+            min-height: 330px;
+        }
+
+        .ck-toolbar {
+            .ck-button {
+                font-size: 0.9rem;
+
+                .ck-icon {
+                    will-change: auto;
+                }
+            }
+        }
+    }
+}
+
+.ck-font-size-dropdown div.ck-dropdown__panel-visible{
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.ck-font-family-dropdown div.ck-dropdown__panel-visible{
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.ck-line-height-dropdown div.ck-dropdown__panel-visible{
+    height: 200px;
+    overflow-y: scroll;
+}
