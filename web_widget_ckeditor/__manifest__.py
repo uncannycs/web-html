@@ -15,8 +15,10 @@
             'web_widget_ckeditor/static/src/js/field_ckeditor.js',
             'web_widget_ckeditor/static/src/scss/web_widget_ckeditor.scss',
             'web_widget_ckeditor/static/src/js/field_html_override.js',
-        ]
-
+        ],
+        'web.report_assets_pdf': [
+            'web_widget_ckeditor/static/src/scss/web_widget_ckeditor.scss',
+        ],
     }
 
 }

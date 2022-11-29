@@ -206,6 +206,7 @@ odoo.define("web_widget_ckeditor.field_ckeditor", function (require) {
             _getCKEditorConfig: async function () {
 
                 var fontFamilyList = this.listFonts()
+                console.log("List--", fontFamilyList)
                 const res = {
                     toolbar: {
                         items: await this._getCKEditorToolbarItems(),
@@ -268,9 +269,9 @@ odoo.define("web_widget_ckeditor.field_ckeditor", function (require) {
 
               let arr = [];
               let done = false;
-
               while (!done) {
                 const font = it.next();
+                console.log("Font--", font)
                 if (!font.done && !arr.includes(font.value[0].family)) {
                   arr.push(font.value[0].family);
                 } else {
