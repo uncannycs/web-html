@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="styles_company_report_inherit" inherit_id="web.styles_company_report">
+        <xpath expr="//t[@t-set='font']" position="after">
+            <t t-if="company.deactivate_report_font">
+                <t t-set="font" t-value="'a'"/>
+            </t>
+            <t t-else="">
+                <t t-set="font" t-value="company.font or 'Lato'"/>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>

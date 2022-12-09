@@ -47,3 +47,17 @@ figure.table table td{
     padding: 0.4em;
     border: 1px solid #bfbfbf;
 }
+figure.table table th{
+    min-width: 2em;
+    padding: 0.4em;
+    border: 1px solid #bfbfbf;
+}
+
+.oe_form_field_html{
+    overflow: unset !important;
+}
+
+.o_rtl .oe_form_field_html{
+    direction: rtl;
+    text-align:right;
+}
